@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import LIstItem from './LIstItem'
+import ListItem from './ListItem'
 import TransactionContext from '../context/TransactionContext'
 
 const ListGroup = () => {
@@ -10,7 +10,7 @@ const ListGroup = () => {
         <ul className="list-group my-3">
 
             {transactions.map((transaction) => (
-                <LIstItem key={transaction.id} transaction={transaction} />
+                <ListItem key={transaction.id} transaction={transaction} />
             )) }
 
         </ul>

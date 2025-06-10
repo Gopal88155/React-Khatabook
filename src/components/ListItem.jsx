@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import TransactionContext from '../context/TransactionContext'
 
-const LIstItem = ({transaction}) => {
+const ListItem = ({transaction}) => {
 
     const {dispatch} = useContext(TransactionContext)
 
@@ -35,4 +35,4 @@ const LIstItem = ({transaction}) => {
     )
 }
 
-export default LIstItem
+export default ListItem
